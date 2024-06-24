@@ -1,38 +1,40 @@
-.App {
+.missionlist{
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 10px auto;
+  width:20%;
+}
+.mission-header{
+  font-size: 18px;
+  text-decoration: underline;
+  margin: 5px 10px 10px 10px;
   text-align: center;
+  font-weight: bold;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.missionlist ul{
+  padding: 0;
+  margin: 0;
+  border:1px solid gray;
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.missionlist li{
+  border-bottom:1px solid gray;
+  list-style-type: none;
+  text-align: left;
+  padding: 10px 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.missionlist li:last-child{
+  border-bottom: none;
 }
-
-.App-link {
-  color: #61dafb;
+.missionlist li span.mission-number{
+  color: #000;
+  margin-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.missionlist li span.mission-name{
+  color: #000;
+  font-weight: bold;
+}
+.missionlist li span.mission-count{
+  color: #000;
+  margin-left: 10px;
 }
